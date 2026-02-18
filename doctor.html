@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-heartbeat text-2xl"></i>
+                    <span class="text-xl font-bold">MediCare Plus</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm">
+                    <a href="index.html" class="hover:text-blue-200 py-1">HOME</a>
+                    <a href="service.html" class="hover:text-blue-200 py-1">SERVICES</a>
+                    <a href="doctor.html" class="hover:text-blue-200 border-b-2 border-white py-1">DOCTORS</a>
+
+                    <a href="login.php" class="hover:text-blue-200 py-1">LOGIN</a>
+                    <!-- <a href="#" class="hover:text-blue-200 py-1">CONTACT</a> -->
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600 pb-4 px-4">
+            <div class="flex flex-col space-y-3 text-sm">
+                <a href="#" class="hover:text-blue-200 py-1 border-b border-blue-500">HOME</a>
+                <a href="#" class="hover:text-blue-200 py-1 border-b border-blue-500">SERVICES</a>
+                <a href="#" class="hover:text-blue-200 py-1 border-b border-blue-500">DOCTORS</a>
+                <a href="#" class="hover:text-blue-200 py-1 border-b border-blue-500">DEPARTMENTS</a>
+                <a href="#" class="hover:text-blue-200 py-1 border-b border-blue-500">ABOUT US</a>
+                <!-- <a href="#" class="hover:text-blue-200 py-1">CONTACT</a> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Doctors Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Expert Doctors</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Meet our team of experienced medical professionals dedicated to providing the best healthcare services.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Doctor" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Arjun Mehra</h3>
+<p class="text-blue-600 mb-2">Cardiologist</p>
+<p class="text-gray-600 text-sm">15+ years experience in treating complex cardiac conditions and interventional procedures.</p>
+ </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://plus.unsplash.com/premium_photo-1682089872205-dbbae3e4ba32?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Doctor" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Ananya Iyer</h3>
+                        <p class="text-blue-600 mb-2">Neurologist</p>
+                        <p class="text-gray-600 text-sm">Specializes in neurological disorders with expertise in stroke treatment and rehabilitation.</p>
+                         </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="Screenshot 2025-04-02 at 7.53.18 AM.png" alt="Doctor" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Rajesh Varma</h3>
+                        <p class="text-blue-600 mb-2">Neurologist</p>
+                        <p class="text-gray-600 text-sm">Over 30 years of experience in diagnosing and treating complex neurological disorders with a focus on stroke and geriatric neurology.</p>
+                          </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="Screenshot 2025-04-02 at 7.54.54 AM.png" alt="Doctor" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="hover:text-blue-200"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Karan Malhotra</h3>
+<p class="text-blue-600 mb-2">Orthopedic Surgeon</p>
+<p class="text-gray-600 text-sm">Expert in joint replacement surgeries and sports medicine with minimally invasive techniques.</p>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Footer -->
+     <footer class="bg-blue-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fas fa-heartbeat text-2xl text-cyan-400"></i>
+                        <span class="text-xl font-bold">MediCare Plus</span>
+                    </div>
+                    <p class="text-blue-200 mb-6">Providing quality healthcare services with compassion and care for over 25 years.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-cyan-400 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-cyan-400 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-cyan-400 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-cyan-400 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Doctors</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Departments</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Cardiology</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Neurology</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Orthopedics</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Pediatrics</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Dermatology</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Diagnostics</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Newsletter</h3>
+                    <p class="text-blue-200 mb-6">Subscribe to our newsletter for health tips and hospital updates.</p>
+                    <form id="newsletter-form" action="process.php" method="post" class="space-y-4">
+                        <div>
+                            <input type="email" name="newsletter_email" placeholder="Your Email Address" class="w-full p-3 rounded-lg bg-blue-800 border border-blue-700 text-white placeholder-blue-400 focus:outline-none focus:ring-2 focus:ring-cyan-400" required>
+                        </div>
+                        <button type="submit" class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:from-blue-700 hover:to-cyan-600 transition duration-300 w-full">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="border-blue-800 mb-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-blue-300 text-sm">&copy; 2025 MediCare Plus Hospital. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-blue-300 text-sm hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-blue-300 text-sm hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-blue-300 text-sm hover:text-white transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform translate-y-20 opacity-0 transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>
