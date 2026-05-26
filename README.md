@@ -25,7 +25,7 @@ A web-based Hospital Washroom Management System developed using PHP and MySQL.
 4. Create database: medicare_plus
 5. Update config.php
 6. Open in browser:
-   https://mdirfan.42web.io/medicare
+   https://mdirfan.is-best.net/e
 
 ## 👨‍💻 Author
 Md Irfan
